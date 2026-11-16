@@ -1,7 +1,6 @@
 import { Navigate, Outlet, useLocation } from "react-router-dom";
 
-// Replace with your real auth check (context / store)
-const isAuthenticated = () => !!localStorage.getItem("token");
+const isAuthenticated = () => !!localStorage.getItem("client_auth");
 
 export function ProtectedRoute() {
     const location = useLocation();
