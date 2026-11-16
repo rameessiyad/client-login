@@ -51,10 +51,6 @@ export default function Login() {
         navigate("/report", { replace: true });
     };
 
-    const handleSso = () => {
-        // TODO: redirect to company SSO
-    };
-
     return (
         <div className="flex min-h-screen bg-white">
             <LoginBrandPanel />
@@ -90,11 +86,11 @@ export default function Login() {
                                 error={errors.password}
                                 autoComplete="current-password"
                             />
-                            <div className="mt-1.5 text-right">
+                            {/* <div className="mt-1.5 text-right">
                                 <a href="/forgot-password" className="text-xs font-medium text-[#20884e] underline hover:text-[#155c36]">
                                     Forgot password?
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
 
                         <Button type="submit" loading={loading}>

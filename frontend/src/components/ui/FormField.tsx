@@ -17,7 +17,7 @@ const FormField = forwardRef<HTMLInputElement, FormFieldProps>(
 
         return (
             <div className="w-full">
-                <label htmlFor={id} className="mb-1.5 block text-sm font-medium text-slate-900">
+                <label htmlFor={id} className="mb-1.5 block text-[14px] font-medium text-slate-900">
                     {label}
                 </label>
 
@@ -28,7 +28,7 @@ const FormField = forwardRef<HTMLInputElement, FormFieldProps>(
                         type={isPassword && visible ? "text" : type}
                         aria-invalid={!!error}
                         aria-describedby={describedBy}
-                        className={`h-12 w-full rounded-lg border bg-white px-4 text-[15px] text-slate-700
+                        className={`h-7.5 w-full rounded-lg border bg-white px-4 text-[14px] text-slate-700
               placeholder:text-slate-400 outline-none transition
               focus:border-[#9fdfbc] focus:ring-2 focus:ring-[#9fdfbc]
               ${isPassword ? "pr-12" : ""}
